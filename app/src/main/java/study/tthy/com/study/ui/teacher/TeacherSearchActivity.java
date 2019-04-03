@@ -123,6 +123,7 @@ public class TeacherSearchActivity extends BaseActivity {
         banner.setIndicatorGravity(BannerConfig.CENTER);//设置指示器位置
         banner.setDelayTime(2000);//设置轮播时间
         banner.setImages(images);//设置图片源
+
         banner.start();
         banner.startAutoPlay();
         searchAdapter = new SearchAdapter();
