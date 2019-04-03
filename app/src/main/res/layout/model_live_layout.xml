@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/rl_living"
+    >
+
+    <ImageView
+        android:id="@+id/iv_living_one"
+        android:layout_width="168dp"
+        android:layout_height="110dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="20dp"
+        android:scaleType="fitXY"
+        android:src="@mipmap/ic_empty_picture" />
+
+    <ImageView
+        android:id="@+id/iv_living_one_head"
+        android:layout_width="34dp"
+        android:layout_height="34dp"
+        android:layout_alignLeft="@+id/iv_living_one"
+        android:layout_below="@+id/iv_living_one"
+        android:layout_marginTop="12dp"
+        android:src="@mipmap/education" />
+
+    <TextView
+        android:id="@+id/tv_living_one_title"
+        style="@style/home_content_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/iv_living_one_head"
+        android:layout_marginLeft="6dp"
+        android:layout_toRightOf="@+id/iv_living_one_head"
+        android:text="红色研学第一场" />
+
+    <ImageView
+        android:id="@+id/iv_living_one_state"
+        android:layout_width="12dp"
+        android:layout_height="9dp"
+        android:layout_alignBottom="@+id/iv_living_one_head"
+        android:layout_alignLeft="@+id/tv_living_one_title"
+        android:layout_below="@+id/tv_living_one_title"
+        android:src="@mipmap/icon_hot" />
+
+    <TextView
+        android:id="@+id/tv_living_one_hot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/iv_living_one_head"
+        android:layout_marginLeft="6dp"
+        android:layout_toRightOf="@+id/iv_living_one_state"
+        android:text="1.3w"
+        android:textColor="@color/home_red_text"
+        android:textSize="11sp" />
+
+    <TextView
+        android:id="@+id/tv_living_one_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/iv_living_one_head"
+        android:layout_alignRight="@+id/iv_living_one"
+        android:text="2019-5-2"
+        android:textColor="@color/color99"
+        android:textSize="11sp" />
+
+
+    <ImageView
+        android:id="@+id/iv_living_two"
+        android:layout_width="168dp"
+        android:layout_height="110dp"
+        android:layout_marginRight="12dp"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@+id/iv_living_one"
+        android:scaleType="fitXY"
+        android:src="@mipmap/ic_empty_picture" />
+
+    <ImageView
+        android:id="@+id/iv_living_two_head"
+        android:layout_width="34dp"
+        android:layout_height="34dp"
+        android:layout_alignLeft="@+id/iv_living_two"
+        android:layout_below="@+id/iv_living_two"
+        android:layout_marginTop="12dp"
+        android:src="@mipmap/education" />
+
+    <TextView
+        android:id="@+id/tv_living_two_title"
+        style="@style/home_content_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/iv_living_two_head"
+        android:layout_marginLeft="6dp"
+        android:layout_toRightOf="@+id/iv_living_two_head"
+        android:text="红色研学第一场" />
+
+    <ImageView
+        android:id="@+id/iv_living_two_state"
+        android:layout_width="12dp"
+        android:layout_height="9dp"
+        android:layout_alignBottom="@+id/iv_living_two_head"
+        android:layout_alignLeft="@+id/tv_living_two_title"
+        android:layout_below="@+id/tv_living_one_title"
+        android:src="@mipmap/icon_hot" />
+
+    <TextView
+        android:id="@+id/tv_living_two_hot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/iv_living_two_head"
+        android:layout_marginLeft="6dp"
+        android:layout_toRightOf="@+id/iv_living_two_state"
+        android:text="1.3w"
+        android:textColor="@color/home_red_text"
+        android:textSize="11sp" />
+
+    <TextView
+        android:id="@+id/tv_living_two_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/iv_living_two_head"
+        android:layout_alignRight="@+id/iv_living_two"
+        android:text="2019-5-2"
+        android:textColor="@color/color99"
+        android:textSize="11sp" />
+
+
+</RelativeLayout>

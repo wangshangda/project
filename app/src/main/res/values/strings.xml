@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">AmazingStudy</string>
+    <string name="mall_exit">再按一次退出程序</string>
+    <!--首页-->
+    <string name="study_home_page">首页</string>
+    <string name="study_home_route">路线</string>
+    <string name="study_home_dynamic">动态</string>
+    <string name="study_home_message">消息</string>
+    <string name="study_home_self">我的</string>
+    <string name="relase_dynamic">发布动态</string>
+    <string name="relase_route">发布游记</string>
+    <string name="recruiting_tutors">招募导师</string>
+    <string name="home_serach_tips">搜索线路，话题，导师，游记等</string>
+    <string name="cancle">取消</string>
+    <string name="home_title_live">人气直播</string>
+    <string name="home_title_interactive">互动打call</string>
+    <string name="home_title_teacher">金牌导师</string>
+    <string name="home_title_hot_line">热门路线</string>
+    <string name="home_title_selection_travel">精选游记</string>
+    <!--导师-->
+    <string name="search_no_data">没有搜索到结果，换一个关键字试试~</string>
+    <string name="follow">关注</string>
+    <string name="private_letter">私信</string>
+    <string name="want_evaluate">我要评价</string>
+</resources>

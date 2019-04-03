@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="18dp">
+
+    <ImageView
+        android:id="@+id/iv_route"
+        android:layout_width="168dp"
+        android:layout_height="110dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="20dp"
+        android:scaleType="fitXY"
+        android:src="@mipmap/ic_empty_picture" />
+
+
+    <ImageView
+        android:id="@+id/iv_route_head"
+        android:layout_width="34dp"
+        android:layout_height="34dp"
+        android:layout_alignLeft="@+id/iv_route"
+        android:layout_below="@+id/iv_route"
+        android:layout_marginTop="12dp"
+        android:src="@mipmap/education" />
+
+    <TextView
+        android:id="@+id/tv_route_title"
+        style="@style/home_content_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/iv_route"
+        android:layout_alignTop="@+id/iv_route_head"
+        android:layout_marginLeft="6dp"
+        android:layout_toRightOf="@+id/iv_route_head"
+        android:ellipsize="end"
+        android:text="红色研学第一场名字名名字名米名字名米米名只能够" />
+
+</RelativeLayout>

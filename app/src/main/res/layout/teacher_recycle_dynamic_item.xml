@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/iv_head"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:src="@mipmap/ic_empty_picture" />
+
+    <TextView
+        android:id="@+id/tv_dynamic_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/iv_head"
+        android:layout_marginLeft="12dp"
+        android:layout_toRightOf="@+id/iv_head"
+        android:text="shiningshell"
+        android:textColor="@color/color33"
+        android:textSize="14sp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="21dp"
+        android:layout_alignTop="@+id/tv_dynamic_name"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/tv_dynamic_name"
+        android:src="@mipmap/authentication_bg" />
+
+    <TextView
+        android:id="@+id/tv_dynamic_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/tv_dynamic_name"
+        android:layout_marginRight="24dp"
+        android:text="2019-5-21"
+        android:textColor="@color/color99"
+        android:textSize="11sp" />
+
+    <TextView
+        android:id="@+id/tv_dynamic_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv_head"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginTop="8dp"
+        android:text="#话题话题话题##话题话题话题##话题话题话题##话题话题话题##话题话题话题##话题话题话题##话题话题话题#" />
+
+    <LinearLayout
+        android:id="@+id/ll_dynamic_pic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_dynamic_content"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/iv_dynamic_pic1"
+            android:layout_width="0dp"
+            android:layout_height="75dp"
+            android:layout_weight="1"
+            android:scaleType="centerCrop" />
+
+        <ImageView
+            android:id="@+id/iv_dynamic_pic2"
+            android:layout_width="0dp"
+            android:layout_height="75dp"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:scaleType="centerCrop" />
+
+        <ImageView
+            android:id="@+id/iv_dynamic_pic3"
+            android:layout_width="0dp"
+            android:layout_height="75dp"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:scaleType="centerCrop" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_dymanic_num"
+        android:layout_width="match_parent"
+        android:layout_height="14dp"
+        android:layout_below="@+id/ll_dynamic_pic"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="12dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/tv_forward_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@mipmap/forward"
+                android:drawablePadding="4dp"
+                android:text="1234"
+                android:textColor="@color/color66"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <View
+            style="@style/HorizontalLineStyle"
+            android:layout_width="1dp"
+            android:layout_height="match_parent" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/tv_message_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@mipmap/message"
+                android:drawablePadding="4dp"
+                android:text="1234"
+                android:textColor="@color/color66"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <View
+            style="@style/HorizontalLineStyle"
+            android:layout_width="1dp"
+            android:layout_height="match_parent" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/cb_praise_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/teacher_dynamic_praise_selector"
+                android:drawablePadding="4dp"
+                android:text="1234"
+                android:textColor="@drawable/teacher_dynamic_textcolor_selector"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>

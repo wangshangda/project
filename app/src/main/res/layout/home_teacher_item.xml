@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="102dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/home_teacher_ly_1"
+        android:orientation="vertical"
+        android:paddingLeft="6dp"
+        android:paddingRight="6dp"
+        >
+
+
+
+        <ImageView
+            android:layout_marginTop="6dp"
+            android:id="@+id/iv_user_head"
+            android:layout_width="92dp"
+            android:layout_height="82dp"
+            android:src="@mipmap/ic_empty_picture" />
+
+        <RatingBar
+            android:id="@+id/ratingbar"
+            style="@style/ratingBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="-6dp"
+            android:rating="2.5" />
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="6dp"
+            android:text="周老师"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_evaluation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="4dp"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="风趣幽默,经验丰富"
+            android:textColor="@color/color66"
+            android:layout_marginBottom="10dp"
+            android:textSize="10sp" />
+
+    </LinearLayout>
+
+    <CheckBox
+        android:id="@+id/btn_foucs"
+        android:layout_width="64dp"
+        android:layout_height="22dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dp_10"
+        android:background="@drawable/home_teacher_focus_selector"
+        android:text="关注"
+        android:button="@null"
+        android:textColor="@drawable/home_teacher_textcolor_selector"
+        android:textSize="@dimen/sp_12"
+        android:gravity="center"
+        />
+
+</LinearLayout>

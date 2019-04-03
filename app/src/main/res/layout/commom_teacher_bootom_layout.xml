@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:orientation="horizontal"
+    android:background="@drawable/shape_teacher_bottom_stoke"
+    android:layout_alignParentBottom="true"
+    >
+    <LinearLayout
+        android:id="@+id/ll_teacher_follw"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_teacher_follw"
+            style="@style/home_content_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/teacher_follw_select"
+            android:drawablePadding="8dp"
+            android:text="@string/follow"
+            android:textColor="@drawable/teacher_dynamic_textcolor_selector" />
+    </LinearLayout>
+
+    <View
+        style="@style/HorizontalLineStyle"
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/ll_bottom"></View>
+
+    <LinearLayout
+        android:id="@+id/ll_teacher_private"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/home_content_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@mipmap/icon_private"
+            android:drawablePadding="8dp"
+            android:text="@string/private_letter" />
+    </LinearLayout>
+
+    <View
+        style="@style/HorizontalLineStyle"
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/ll_bottom"></View>
+
+    <LinearLayout
+        android:id="@+id/ll_teacher_comment"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/home_content_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@mipmap/icon_comment"
+            android:drawablePadding="8dp"
+            android:text="@string/want_evaluate" />
+    </LinearLayout>
+</LinearLayout>

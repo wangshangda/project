@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="76dp"
+    android:layout_height="76dp"
+    android:layout_marginBottom="12dp"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:id="@+id/rl_evaluate_pic"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible"
+        >
+
+        <ImageView
+            android:id="@+id/iv_evaluate_pic"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_centerInParent="true"
+            android:src="@mipmap/ic_empty_picture" />
+
+        <ImageView
+            android:id="@+id/iv_evaluate_close"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/toolbar_close" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_addpic"
+        android:layout_width="76dp"
+        android:layout_height="76dp"
+        android:background="@mipmap/teacher_evaluate_pic_bg"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="centerInside"
+            android:src="@mipmap/icon_add_pic" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="点击上传"
+            android:textColor="@color/color66"
+            android:textSize="11sp" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

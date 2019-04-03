@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <com.youth.banner.Banner
+                    android:id="@+id/banner"
+                    android:layout_width="match_parent"
+                    android:layout_height="245dp"></com.youth.banner.Banner>
+
+                <study.tthy.com.study.widget.BannerIndicatorView
+                    android:id="@+id/indicator_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/banner"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="-10dp"
+                    app:app_cell_count="4"
+                    app:app_normal_color="@color/banner_normal_color"
+                    app:app_selected_color="@color/banner_select_color"></study.tthy.com.study.widget.BannerIndicatorView>
+
+                <LinearLayout
+                    android:id="@+id/ll_serarch"
+                    android:layout_width="match_parent"
+                    android:layout_height="36dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="6dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="8dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/home_dialog_afwhite_bg">
+
+                        <EditText
+                            android:id="@+id/ed_search_content"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="16dp"
+                            android:layout_weight="1"
+                            android:background="@null"
+                            android:hint="@string/home_serach_tips"
+                            android:textColor="@color/color33"
+                            android:textSize="14sp" />
+
+                        <ImageView
+                            android:id="@+id/iv_green_search"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginRight="16dp"
+                            android:src="@mipmap/found" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/iv_home_threedot"
+                        android:layout_width="36dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="16dp"
+                        android:background="@drawable/home_dialog_threedot_bg"
+                        android:clickable="true"
+                        android:scaleType="centerInside"
+                        android:src="@mipmap/ellipse_three" />
+
+                </LinearLayout>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rv_home_menu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/banner"
+                    android:nestedScrollingEnabled="false"></android.support.v7.widget.RecyclerView>
+
+                <!--推荐-->
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rv_home_card"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rv_home_menu"
+                    android:layout_marginTop="24dp"
+                    android:paddingLeft="@dimen/dp_10"
+                    android:paddingRight="10dp"></android.support.v7.widget.RecyclerView>
+
+                <TextView
+                    android:id="@+id/tv_live"
+                    style="@style/home_title_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rv_home_card"
+                    android:layout_marginTop="36dp"
+                    android:text="@string/home_title_live" />
+
+                <TextView
+                    android:id="@+id/tv_live_more"
+                    style="@style/home_more_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignTop="@+id/tv_live" />
+                <!--直播-->
+
+                <include
+                    layout="@layout/model_live_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_live"
+                    android:layout_marginTop="20dp" />
+
+                <!--互动打call-->
+                <TextView
+                    android:id="@+id/tv_interactive"
+                    style="@style/home_title_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rl_living"
+                    android:layout_marginTop="36dp"
+                    android:text="@string/home_title_interactive" />
+
+                <TextView
+                    android:id="@+id/tv_interactive_more"
+                    style="@style/home_more_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignTop="@+id/tv_interactive" />
+
+
+                <RelativeLayout
+                    android:id="@+id/rl_interactive"
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp"
+                    android:layout_below="@+id/tv_interactive"
+                    android:layout_marginTop="20dp"
+                    android:background="@mipmap/ic_image_loading">
+
+
+                    <study.tthy.com.study.widget.BannerIndicatorView
+                        android:id="@+id/interactive_view"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginBottom="5dp"
+                        app:app_cell_count="2"
+                        app:app_normal_color="@color/banner_normal_color"
+                        app:app_selected_color="@color/banner_select_color"></study.tthy.com.study.widget.BannerIndicatorView>
+
+                </RelativeLayout>
+
+                <!--导师-->
+                <TextView
+                    android:id="@+id/tv_teacher"
+                    style="@style/home_title_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rl_interactive"
+                    android:layout_marginTop="34dp"
+                    android:text="@string/home_title_teacher" />
+
+                <TextView
+                    android:id="@+id/tv_teacher_more"
+                    style="@style/home_more_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignTop="@+id/tv_teacher" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/ry_teacher"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_teacher"
+                    android:layout_marginTop="16dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp">
+
+                </android.support.v7.widget.RecyclerView>
+
+                <!--热门路线-->
+                <TextView
+                    android:id="@+id/tv_line"
+                    style="@style/home_title_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ry_teacher"
+                    android:layout_marginTop="36dp"
+                    android:text="@string/home_title_hot_line" />
+
+                <TextView
+                    android:id="@+id/tv_line_more"
+                    style="@style/home_more_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignTop="@+id/tv_line" />
+
+                <include
+                    layout="@layout/model_line_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_line" />
+
+
+                <!--精选游记-->
+                <TextView
+                    android:id="@+id/tv_travel"
+                    style="@style/home_title_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rl_line"
+                    android:layout_marginTop="34dp"
+                    android:text="@string/home_title_selection_travel" />
+
+                <TextView
+                    android:id="@+id/tv_travel_more"
+                    style="@style/home_more_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignTop="@+id/tv_travel" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rv_travel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_travel"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginTop="3dp"
+                    android:paddingBottom="20dp"></android.support.v7.widget.RecyclerView>
+            </RelativeLayout>
+        </android.support.v4.widget.NestedScrollView>
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+</LinearLayout>

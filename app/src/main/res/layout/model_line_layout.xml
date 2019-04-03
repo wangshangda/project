@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_line"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/iv_line_one"
+        android:layout_width="168dp"
+        android:layout_height="110dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="20dp"
+        android:scaleType="fitXY"
+        android:src="@mipmap/ic_empty_picture" />
+
+    <ImageView
+        android:id="@+id/iv_line_one_head"
+        android:layout_width="34dp"
+        android:layout_height="34dp"
+        android:layout_alignLeft="@+id/iv_line_one"
+        android:layout_below="@+id/iv_line_one"
+        android:layout_marginTop="12dp"
+        android:src="@mipmap/education" />
+
+    <TextView
+        android:id="@+id/tv_line_one_title"
+        style="@style/home_content_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/iv_line_one_head"
+        android:layout_marginLeft="6dp"
+        android:layout_toRightOf="@+id/iv_line_one_head"
+        android:layout_alignEnd="@+id/iv_line_one"
+        android:text="红色研学第一场名字名名字名米名字名米米名只能够"
+        android:ellipsize="end"
+        />
+
+
+    <ImageView
+        android:id="@+id/iv_line_two"
+        android:layout_width="168dp"
+        android:layout_height="110dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="12dp"
+        android:layout_toRightOf="@+id/iv_line_one"
+        android:scaleType="fitXY"
+        android:src="@mipmap/ic_empty_picture" />
+
+    <ImageView
+        android:id="@+id/iv_line_two_head"
+        android:layout_width="34dp"
+        android:layout_height="34dp"
+        android:layout_alignLeft="@+id/iv_line_two"
+        android:layout_below="@+id/iv_line_two"
+        android:layout_marginTop="12dp"
+        android:src="@mipmap/education" />
+
+    <TextView
+        android:id="@+id/tv_line_two_title"
+        style="@style/home_content_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/iv_line_two_head"
+        android:layout_marginLeft="6dp"
+        android:layout_toRightOf="@+id/iv_line_two_head"
+        android:text="红色研学第一场" />
+
+</RelativeLayout>
